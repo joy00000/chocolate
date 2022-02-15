@@ -26,7 +26,7 @@ def index():
         milk = request.form.get("milk")
         #print(sugar, milk)
         model = joblib.load("CTaste")
-        pred = model.predict([[sugar, milk]])
+        pred = model.predict([[float(sugar), float(milk)]])
         #print(pred)
         pred = pred[0]
         
