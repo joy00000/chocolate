@@ -44,7 +44,8 @@ def index():
 # In[4]:
 
 
-app.run()
+if __name__ == "__main__":
+    app.run()
 
 
 # In[ ]:
